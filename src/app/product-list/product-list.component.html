@@ -8,9 +8,13 @@
   <button (click)="share()">Share</button>
  
  <app-product-alert 
-  [product]="product"></app-product-alert>
+  [product]="product"
+  (notify)="onNotify()"
+  ></app-product-alert>
+  
 </div>
 
+<!-- [product] is the input variable defined in product-alert compoentn whiel (notify) is the output eventemitter which emits event when the notify me button is clicked in the product-alert component. we receive that event here in this compoentn and deal with it
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
