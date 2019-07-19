@@ -10,7 +10,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   imports: [
     BrowserModule,
@@ -20,7 +20,8 @@ import { CartComponent } from './cart/cart.component';
       { path: 'products/:productId', component: ProductDetailsComponent},
       { path: 'cart', component: CartComponent},
       { path: '**', component: ProductListComponent}
-    ])
+    ]),
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
