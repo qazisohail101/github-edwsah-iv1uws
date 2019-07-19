@@ -22,10 +22,11 @@ export class ProductDetailsComponent implements OnInit {
     this.route.paramMap.subscribe(
       params => {this.product= products[params.get('productId')];}
     );
-
-    addToCart(prod){
-      this.cartService.addToCart(prod);
     }
+
+     addToCart(prod){
+      this.cartService.addToCart(prod);
+      window.alert("added to cart");
+     }
   }
 
-}
