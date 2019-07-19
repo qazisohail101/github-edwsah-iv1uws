@@ -1,3 +1,7 @@
 <H1>Product Details</H1>
 <div *ngIf="product">
-  {{product.name}}
+<p>  {{product.name}} </p>
+<p> {{product.price | currency}} </p>
+<p> {{product.description}} </p>
+</div>
+<button> Purchase </button>
