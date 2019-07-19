@@ -4,4 +4,4 @@
 <p> {{product.price | currency}} </p>
 <p> {{product.description}} </p>
 </div>
-<button> Purchase </button>
+<button (click)="addToCart(product)"> Purchase </button>
